@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" href="lib/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="lib/themes/TestTheme.min.css">
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script> <!-- Include the Cordova script -->
+    <script src="js/index.js"></script>
+    <title>IMC Calculator</title>
+</head>
+<body>
+    <h1>IMC Calculator</h1>
+    <form>
+        <label for="poids">Poids</label>
+        <input type="number" id="poids" placeholder="poids en Kg" min="0">
+
+        <label for="taille">Taille</label>
+        <input type="number" id="taille" placeholder="taille en m" min="0">
+
+        <!-- Use a button type instead of input type -->
+        <button type="button" onclick="calculateBMI()">Calculer</button>
+
+        <label id="resultat"></label>
+    </form>
+</body>
+</html>
